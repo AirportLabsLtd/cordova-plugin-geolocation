@@ -100,7 +100,8 @@ var geolocation = {
                     accuracy:p.accuracy,
                     heading:p.heading,
                     velocity:p.velocity,
-                    altitudeAccuracy:p.altitudeAccuracy
+                    altitudeAccuracy:p.altitudeAccuracy,
+                    floor:p.floor
                 },
                 p.timestamp
             );
@@ -182,7 +183,8 @@ var geolocation = {
                     accuracy:p.accuracy,
                     heading:p.heading,
                     velocity:p.velocity,
-                    altitudeAccuracy:p.altitudeAccuracy
+                    altitudeAccuracy:p.altitudeAccuracy,
+                    floor:p.floor
                 },
                 p.timestamp
             );

@@ -292,6 +292,7 @@
         [returnInfo setObject:[NSNumber numberWithDouble:lInfo.altitude] forKey:@"altitude"];
         [returnInfo setObject:[NSNumber numberWithDouble:lInfo.coordinate.latitude] forKey:@"latitude"];
         [returnInfo setObject:[NSNumber numberWithDouble:lInfo.coordinate.longitude] forKey:@"longitude"];
+        [returnInfo setObject:[NSNumber numberWithInt:lInfo.floor.level] forKey:@"floor"];
 
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:returnInfo];
         [result setKeepCallbackAsBool:keepCallback];

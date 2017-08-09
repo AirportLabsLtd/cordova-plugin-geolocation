@@ -30,7 +30,7 @@
  * @param {Object} altacc
  * @constructor
  */
-var Coordinates = function(lat, lng, alt, acc, head, vel, altacc) {
+var Coordinates = function(lat, lng, alt, acc, head, vel, altacc, floor) {
     /**
      * The latitude of the position.
      */
@@ -64,6 +64,11 @@ var Coordinates = function(lat, lng, alt, acc, head, vel, altacc) {
      * The altitude accuracy of the position.
      */
     this.altitudeAccuracy = (altacc !== undefined) ? altacc : null;
+
+    /**
+    *  The floor of the building (if available)
+    */
+    this.floor = (floor != undefined) ? floor : null;
 };
 
 module.exports = Coordinates;
