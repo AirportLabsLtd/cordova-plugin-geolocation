@@ -68,7 +68,7 @@ var Coordinates = function(lat, lng, alt, acc, head, vel, altacc, floor) {
     /**
     *  The floor of the building (if available)
     */
-    this.floor = (floor != undefined) ? floor : null;
+    this.floor = (floor != undefined) ? floor : "No floor available";
 };
 
 module.exports = Coordinates;
